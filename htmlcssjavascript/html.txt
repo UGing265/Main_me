@@ -1,0 +1,24 @@
+HTML công thức cơ bản
+<b> tô đậm <\b> **
+<i> In nghiêng <\i>
+<strong> Tô đậm theo chuẩn web ngữ nghĩa <\strong>
+<em> In nghiêm theo chuẩn web ngữ nghĩa <\em>
+<br> xuống dòng
+**
+<blockquote>"Tôi chuẩn man" ~Cao thái Sơn<\blockquote>
+là trích dẫn từ nguồn khác
+**
+<ol>
+    <li> số thứ tự 1 <\li>
+    <li> 2 <\li>
+<\ol>
+<ul> 
+    <li> không sắp xếp thứ tự <\li>
+    <li> 2 <\li>
+<\ul>
+
+Liên kết**
+<a href="địa chỉ liên kết"> đây là 1 liên kết <\a>
+<a href="địa chỉ liên kết" target="_blank">Liên kết này sẽ mở cửa sổ riêng<\a>
+Ảnh**
+<img src="đường dẫn đến ảnh" alt="

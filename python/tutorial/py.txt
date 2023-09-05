@@ -1,0 +1,204 @@
+Pyhon toán tử ?
+"+" là nối chuỗi 
+"*" là lặp 
+vd
+print('DOTA' * 3)
+in 'DOTA DOTA DOTA'
+
+"//" là chia lấy số nguyên vd 10/7 = 1
+"%" là lấy số dư
+"**" là toán tử mũ 
+vd
+2**5 = 2^5 = 32
+
+
+Python check kiểu dữ liệu?
+print(type(...)) sử dụng cho việc check cái kiểu dữ liệu vd như str là chuỗi xâu int là kiểu số nguyên 
+*bonus có thể xài kiểu này khai báo print(str(name)) để biến thành số nguyên sang chuỗi
+
+Python nhập ?
+biến = input() done
+lưu ý: cần xài cái khai báo này str(name) để bấm ra chữ vì input mặc định là số nguyên 
+
+python ghi chú ?
+#sdsdsd
+""" ez ez 
+ez  23 +2
+ as """
+or 
+''' dsf z '''
+
+Python toán tử (khó) ? https://toidicode.com/cac-toan-tu-co-ban-trong-python-349.html
+Loại toán tử	Mục đích	                                                                       Cách dùng
+=      Gán giá trị của vế phải cho vế trái                                                    x = 5
++=     Tăng vế trái một phần bằng vế phải sau đó gán giá trị cho vế trái                     x += 5    (x = x + 5)
+
+-=	   Giảm vế trái một phần bằng giá trị vế phải sau đó gán kết quả cho vế trái             x -= 5    (x = x - 5)
+
+*=	   Nhân giá trị của vế trái với vế phải sau đó gán kết quả cho vế trái                   x *= 5    (x = x * 5)
+
+/=	   Chia giá trị của vế trái cho vế phải sau đó gán kết quả cho vế trái                   x /= 5    (x = x / 5)
+
+%=	   Chia giá trị của vế trái cho vế phải sau đó gán phần dư cho vế trái (chia lấy dư)     x %= 5    (x = x % 5)
+
+//=	   Phép chia lấy phần nguyên.                                                            x //= 5    (x = x // 5)
+
+**=	   Lấy vế trái lũy thừa với bậc là giá trị vế phải sau đó gán kết quả cho vế trái        x **= 5    (x = x ** 5)
+
+&=	   Thực hiện phép toán của toán tử AND cho 2 vế sau đó gán cho vế trái                   x &= 5     (x = x & 5)
+
+|=	   Thực hiện phép toán của toán tử OR cho 2 vế sau đó gán cho vế trái                    x |= 5     (x = x | 5)
+
+^=	   Thực hiện phép toán của toán tử XOR 2 vế sau đó gán cho vế trái                       x ^= 5     (x = x ^ 5)
+
+>>=	   Thực hiện phép toán dịch phải của vế phải sau đó gán cho vế trái                      x >>= 5     (x = x >> 5)
+
+<<=	   Thực hiện phép toán dịch trái của vế phải sau đó gán cho vế trái                      x <<= 5     (x = x << 5)
+
+Python toán tử ?
+in và not in để xác định xem nó có chữ đó trong đó không
+vd
+print("Code" in "Codelearn")
+print("Py" not in "Python")
+
+is, not is là giống in và not in nhưng xài cho số
+vd
+print(5 is 2) false 
+
+python lưu ý ?
+python không như ngôn ngữ khác thì nó sẽ thụt lề còn C/C++ là {} nếu k hụt lề thì lệnh báo lỗi  
+
+python turtle() ?
+đây là turtle liên quan vẽ
+các câu lệnh tạo vẽ
+biến = turtle.Pen() tạo bản vẽ
+forward(khoảng cách) đi thẳng
+back(kc) đi lùi
+Quay phải: right(goc quay)
+quay trái: left(goc quay)
+đi thành hình tròn circle(bán kính)
+turtle.dot(kich thuoc,"color"): điền hình vào
+turtle.speed(số): tăng speed lên từ 1 đến 10, 0 là nhanh nhất
+bonus: xài done để giữ màn hình
+
+python def ?
+khai báo hàm con giống c++
+def add(a, b):
+    x = a + b
+    return(x)
+
+ketqua = add(1, 2)
+print(ketqua)
+
+python cách k xuống dòng ?
+end = ''
+vd for i in range(1,100):
+       print(i, end = '')
+
+python khai đếm abc ?
+name = "Codelearn"
+for c in name:
+    print(c)
+
+python list ?
+vd name = ['a','b','c']
+đếm:        0   1   2
+ngược:      -3  -2  -1
+or list những cái cần list[start:end]
+vd print(name[0:2])
+sửa 
+name = ['Vu Thanh Tai', 'Nguyen Van A', 'Nguyen Thi E']
+print(name)
+# ['Vu Thanh Tai', 'Nguyen Van A', 'Nguyen Thi E']
+
+name[1] = 1996
+print(name)
+# ['Vu Thanh Tai', 1996, 'Nguyen Thi E']
+xóa
+name = ['Vu Thanh Tai', 'Nguyen Van A', 'Nguyen Thi E']
+print(name)
+# ['Vu Thanh Tai', 'Nguyen Van A', 'Nguyen Thi E']
+
+name[1] = 1996
+print(name)
+# ['Vu Thanh Tai', 1996, 'Nguyen Thi E']
+list lòng nhau
+option = [12,5,1996]
+myList = ['Vu Thanh Tai', option]
+print(myList)
+# ['Vu Thanh Tai', [12, 5, 1996]]
+
+python tuple ?
+giống list mà tuple nó k đổi giá trị được
+day = ('dota','monday',...) #có thể bỏ ()
+
+lưu ý khi khai 1 biến duy nhất thì nhớ dấu phẩy
+day = ('dota',)
+
+xóa 
+vì k thay đổi đc => xóa all dell day
+
+thêm day = day1 + day2
+
+đảo list
+list.reverse()
+
+python Dictionary ?
+ thì kiểu lưu giá trị vào cái key á
+vd 
+person = {
+    'name': 'Vũ Thanh Tài',
+    'age': 22,
+    'male': True,
+    'status': 'single'        
+    }
+
+python import as from ?
+import ... as ... đổi tên dễ xài á
+from ... import (lấy mấy đã khai trong file kia) là lấy cụ thể ra k cần phải sử dụng dấu . cho dài 
+vd 
+thay vì xài turtle.pen()
+thì bấm chữ pen() là xong
+vd
+cách gọn hơn
+import Robot.Design.outfit
+thay vì
+from Robot.Design import outfit
+
+from ... import * lấy all trong import đó tương tự phía trên
+/có thể lấy địa chỉ = cách a.path/
+or liệt kê danh sách bên trong import có gì
+/dir(tên import)
+
+python câu lệnh break contine ?
+vd break (là dừng thẳng k chạy tiếp nữa)
+for i in range(1, 11):
+    if i == 6:
+        break
+    print(i)
+vd continue (CẮT những khúc đúng nhưng vẫn tiếp tục tiếp)
+for i in range(1, 20):
+    if i % 2 == 0:
+        continue
+    print(i)
+vd này sẽ rõ
+s = input()
+for c in s:
+     if c == 'y':
+      continue
+     print("Current character:", c)
+python cần tìm số thâp phân ? round()
+ cú pháp round(số, làm tròn)
+round(2,5254242,2)
+= 2,52
+
+python lsit tổng hợp?
+max,min
+len: đếm
+insert: chèn
+remove: xóa
+pop: xóa chèn (sử dụng số vd pop(1))
+sort: sắp xếp (sort(reverse=true))
+reverse: đảo
+count: kiểu giống này list[2] = list.count(2)
+clear: dọn hết trong list

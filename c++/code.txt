@@ -1,0 +1,146 @@
+hoán đổi
+a=b
+b=c
+c=a
+
+c++ 
+khai báo con trỏ 
+vd int gg; 
+có thể xài & gán thẳng vào
+vd time(&gg) or gg = time(NULL);
+
+C++
+toán tử 3 ngôi
+vd int gg (a==0) ? "LOL" : "SAI";
+
+
+C++
+vd về a++ ++a
+int a = 21; int c ;
+ c = a++;
+ cout << "1, Gia tri cua a++ la: " << c << endl ;// Gia tri cua a se khong duoc tang truoc khi duoc gan. c = a++; 
+  cout << "2, Gia tri cua a la: " << a << endl;// Sau khi gia tri cua a duoc tang thi:
+  c = ++a; cout << "3, Gia tri cua ++a la: " << c << endl;// Gia tri cua a se duoc tang truoc khi duoc gan. 
+
+C++
+|| là hoặc
+&& là và
+có thể hiểu cần anh A cần tìm độ dài quần 10 - 20m người ta sẽ nhập cho anh A là a< 10 hoặc a> 20 và rồi tờ giấy tính tiền in ngược (phù hợp) thật chất là true nhờ chữ hoặc
+
+C++ 
+switch case là kiểu nhập khớp chữ đó vd  Mình gài lệnh + - * / chỉ cần nhập đúng dấu + là khớp lệnh :>
+cú pháp: switch (x) {
+	case giá_trị_1:
+		// Nếu x có giá trị bằng giá_trị_1 thì đoạn code trong khối lệnh này sẽ được thực thi
+		break;
+	...
+	case giá_trị_n:
+		// Nếu x có giá trị bằng giá_trị_n thì đoạn code trong khối lệnh này sẽ được thực thi
+		break;
+	default:
+		/* 
+		Nếu x không bằng giá trị nào trong các giá trị trên 
+		thì code trong khối lệnh này sẽ được thực thi
+		*/
+		break;
+	}
+<<nâng cao tính năm nhuận>>
+vd switch (month) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+		{
+			day = 31; //có thể thấy case n: rút gọn 1 lệnh chạy chung { lệnh break; }
+			break;
+		}
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+		{
+			day = 30;
+			break;
+		}
+		default: {
+			day = 28;
+		}
+	}
+	cout << day;
+
+C++ *
+lệnh enum
+
+C++ fun
+\1 \2 \3 là tạo emoji
+
+c++ tiếng việt ? 
+SetConsoleOutputCP(
+  _In_ UINT wCodePageID
+);
+hiểu đơn giản là tạo cái unicode 
+mã mình dạng xài ****65001****
+vd SetConsoleOutputCP(65001);
+
+C++ khởi tạo random ?
+nếu khái niệm nói khá dài dòng thì có hiểu đơn giản seed là đia chỉ của nó gắn vào hệ thống vd như gắn vào đồng hồ đi
+thì khi gắn vào sẽ tự in ra số random trên seed nếu cùng seed thì tạo giống nhau
+srand()
+vd srand((int) time(0)); mà không phải srand(123456); vì mình cần giá trị động không phải tĩnh
+
+ khởi tạo xong phát sinh random ?
+thì kiểu in ra rồi random thôi 
+rand()
+vd
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main(){
+    int r;
+    for(int i = 0; i < 5; ++i){
+        r = rand();
+        printf("Rand %d is %d\n",i, r);
+    }    
+}
+MỐI QUAN HỆ RAND() và SRAND() ?
+vd
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+ 
+int main(){
+    int r;
+    srand((int)time(0));
+    for(int i = 0; i < 5; ++i){
+        r = rand();
+        printf("Rand %d is %d\n",i, r);
+    }    
+}
+lưu ý: phép chia dư còn cho ta tính chất này a % b = [0, b-1]
+công thức lậu
+int r = minN + rand() % (maxN + 1 - minN)
+ 
+
+
+c++ so sánh 2 chuỗi*
+hàm strcmp
+
+C++ <dos.h> 
+tăng tốc lập trình 
+
+C++ header 
+có thể khai báo thư viện <tên>.h do chính mình tạo NHƯNG bên trong không đc khai báo int main()
+vì mình cần hàm con (hàm tạo công thức) để nối chương trình chính của mình thôi
+
+C++ github
+sử dụng git để đồng bộ những nhà phát triển ( mình và ng ta) và có thể thống nhất nhau tạo 1 project hoàn chỉnh
+
+C++ cần perference for header ?
+https://en.cppreference.com/w/cpp/header (thư viện)
+
+
+
+
